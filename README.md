@@ -18,12 +18,6 @@ The packages used are as follows:
 - [node-fetch](https://www.npmjs.com/package/node-fetch) 
 - [Material-UI](https://material-ui.com/)
 
-I created this dashboard as I felt that my previous dashboard was lacking in features. In addition, there was no longevity, since the ticker options in that dashboard was limited to a single static CSV file, which will eventually be outdated. Hence I used the yfinance module, which ensures that tickers are up-to-date as long as the module remains alive. I also included useful indicators which I felt could help in making decisions on a stock, or conducting basic technical analysis on the selected stock.
-
-However, there are still some limitations, since the data retrieval ultimately relies on another module. Yfinance is unable to provide certain resolutions of historical data, hence I was unable to obtain the appropriate intra-day data and I have fixed the resolution to 1 day. In addition, the aesthetics of the dashboard can be improved for better readability. Such an improvement could include visibly separating the charts, or hiding certain charts, so as to allow better human-level comparisons.
-
-If you are unfamiliar with Yahoo Finance and the structure of their ticker symbols, you can simply type the appropriate equity's name into the search bar on their <a href="https://finance.yahoo.com/">homepage</a>.
-
 ## Overview
 
 I wanted to create a React web application that implemented API calls and temporary storage solutions. I was previously familiar with direct API calls, but not with in-memory solutions. This was a problem because I did not want to make repeated API calls for similar data, and wanted a way to cache similarly queried data. Redis was a good candidate for in-memory data storage. As such, this application was built in order to reduce external API calls while maintaining a level of freshly retrieved data.
